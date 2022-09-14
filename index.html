@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_blank"><!--all link in new tab!!-->
+  <!--<link> rel attribute means relationship-->
+  <!--Define the character set used:--><meta charset="UTF-8">
+  <!--Define keywords for search engines:--><meta name="keywords" content="HTML, CSS, JavaScript">
+  <!--Define a description of your web page:--><meta name="description" content="Free Web tutorials">
+  <!--Define the author of a page:--><meta name="author" content="John Doe">
+  <!--refresh document every 30 seconds:--><meta http-equiv="refresh" content="30">
+  <!--Seeting the viewport to make your website look good on all devices:--><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasan's Website</title><!--to add a favion-->
+<link rel="icon" type="image/x-icon" href="F:\Html\favicon.ico">
+<style>
+    table{font-family: arial;
+          border-collapse: collapse;
+          width: 100%;}
+    td,th{border: 1px solid #dddddd;
+          text-align:left;
+          background-color: lightblue;
+          padding: 8px;
+          padding-top: 10px;
+          padding-bottom: 20px;
+          padding-left: 30px;
+          padding-right: 40px;}
+    tr:nth-child(even){background-color: #dddddd;}
+    .city{background-color: tomato;<!--.city for classer-->
+          color:white;
+          border:2px solid black;
+          padding:20px;
+          margin:20px;}
+    .note{font-size:120%;
+                color:red;}
+    .main{text-align:center;}
+    #myHeader{text-align: center;<!--#myHeader for id-->
+              background-color: lightblue;
+              padding: 40px;
+              }
+     * {
+       box-sizing: border-box;
+     }
+
+     header{
+       background-color: #666;
+       padding:30px;
+       text-align:center;
+       font-size:35px;
+       color:white;
+     }
+     nav{
+       float: left;
+       width:30%;
+       height:300px;
+       background: #ccc;
+       padding: 20px;
+     }
+     nav ul{
+       list-style-type: none;
+       padding: p;
+     }
+     article{
+       float: left;
+       padding:20px;
+       width:70%;
+       background-color: #f1f1f1;
+       height:300px;
+     }
+     section::after{
+       content: "";
+       display: table;
+       clear: both;
+     }
+     footer {
+       background-color: #777;
+       padding:10px;
+       text-align:center;
+       color:white;
+     }
+     @media(max-width:600px){
+       nav, article{
+         width: 100%;
+         height: auto;
+       }
+     }
+</style>
+</head>
+<body>
+
+  <p title="I'm a tooltip">This is a paragraph.</p>
+  <p title=about w3schools><!--The title attribute defines some extra information about an element-->
+ <a href="https://www.w3schools.com" target="_blank">This is a link</a><br><hr>
+ <img src="G:\download\picture\343619.jpg" alt="sky" width="100">
+ <!--Use the style attribute for styling HTML elements-->
+ <p style="color:red;font-family:verdana;text-align:center;">I am Red</p><!--Use color for text colors////Use text-align for text alignment-->
+ <p style="color:blue;">I am Blue</p><!--Use text-align for text alignment-->
+ <p style="font-size:80px;">I am Big</p><!--Use font-size for text sizes-->
+  <h1 style="background-color:powderblue;">This is a heading</h1><!--Use background-color for background color-->
+ <p style="background-color:tomato;">This is a paragraph.</p>
+ <h1 style="font-family:verdana;">This is a heading</h1><!--Use font-family for text fonts-->
+ <p style="font-family:courier;">This is a paragraph.</p>
+ <pre><!--<pre></pre> for poem line ,Defines pre-formatted text-->
+      My Bonnie lies over the ocean.
+      My Bonnie lies over the sesa.
+      My Bonnie lies over the ocean.
+      oh, bring back my Bonnie to me.
+ </pre>
+<!--  <b> - Bold text////<i> - Italic text////<em> - Emphasized text(same as <i>)  -->
+ <strong>This text is important!</strong><!--<strong> - Important text-->
+ <p>Do not forget to buy <mark>milk</mark>today.</p><!--<mark> - Marked text-->
+ <p>My favorite color is <del>blue</del><ins>red</ins>.</p><!--<ins>for underline inserted text///<del> - Deleted text -->
+ <small>This is some smaller text.</small><!--<small> - Smaller text-->
+ <p>This is <sub>subscripted</sub>text.</p><!--<sub> - Subscript text -->
+ <p>This is <sup>superscripted</sup>text.</p><!--<sup> - Superscript text -->
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html"><!--<blockquote>	Defines a section that is quoted from another source-->
+  For 50 years, WWF has been protecting the future of nature.
+  The world's leading conservation organization,
+  WWF works in 100 countries and is supported by
+  1.2 million members in the United States and
+  close to 5 million globally.
+</blockquote><!--The <blockquote> HTML element indicates that the enclosed text is an extended quotation.-->
+<!--  <figure>
+      <blockquote cite="https://www.huxley.net/bnw/four.html">
+          <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+      </blockquote>
+      <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+  </figure>-->
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p><!--The HTML <q> tag defines a short quotation.-->
+<p>The <abbr title="World Health organization">WHO</abbr> was founded in 1948</p><!--short form///<abbr>	Defines an abbreviation or acronym-->
+<address>written by John Doe.<br><!--<address>	Defines contact information for the author/owner of a document-->
+  Visit us at:<br><!--The HTML <address> tag defines the contact information for the author/owner of a document or an article.-->
+  Example.com<br>
+  Box 564, Disneyland<br>
+  USA</address>
+  <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><!--The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).-->
+<bdo dir="rtl">This text will be written from right to left</bdo><!--<bdo> for Bi-Directional Override///<bdo>	Defines the text direction-->
+  <h1 style="background-color:DodgerBlue; text-align:center;">Hello World</h1>
+  <p style="background-color:Tomato;text-align:left;">orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation  ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p style="color:Mediumseagreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+<h1 style="border:2px solid tomato;color:brown;background-color:lightblue;">Hello World</h1>
+<h1 style="border:3px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:4px solid violet;">Hello World</h1>
+<h1 style="background-color:rgb(255,99,71);">hola</h1>
+<h1 style="background-color:#ff6347;">hola</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hola</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">hola</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hola</h1>
+<h1 style="color:blue;">A Blue Heading</h1><!--Inline - by using the style attribute inside HTML elements-->
+<p style="color:red;">A red paragraph.</p><!--Internal - by using a <style> element in the <head> section-->
+<!--internal  <head>
+  <style>
+  body {   background-color:lightblue; }
+  h1   {     color:blue;
+          background-color: yellow;
+          font-family:verdana;
+          font-size:300%       }
+  p    {      color:red;
+          font-family:courier;
+          border: 2px solid powderblue;   Use the CSS border property for borders
+          padding: 30px;   Use the CSS padding property for space inside the border
+          margin: 50px;   Use the CSS margin property for space outside the border
+          font-size:160%;      }
+  </style>
+</head>   -->        <!-- external   <head>
+                      <link rel="stylesheet" href="styles.css">
+                    </head>   -->        <!--   _self - Default. Opens the document in the same window/tab as it was clicked///_blank - Opens the document in a new window or tab
+                                                _parent - Opens the document in the parent frame///_top - Opens the document in the full body of the window-->
+<a href="https://www.W3schools.com/"target="_blank">Visit w3schools.com!</a>
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/"target="_blank">W3C</a></p>
+<p><a href="https://www.google.com/">google</a></p>
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+<a href="dafault.asp">
+  <img src="G:\download\picture\Lion.jpg" alt="HTML Tutorial" style="width:80px;"></a><!--for link an image-->
+<br><a href="mailto:robin4647m@gmail.com"target="_blank">Send email</a><!--Link to an email address-->
+<button onclick="document.location='https://www.w3schools.com/'">HTML Tutorial</button><!--onclick="document.location='any link'"-->
+<a href="https://www.youtube.com" onclick="youtube()">Hello</a>
+<a href="https://www.w3schools.com/html/"title="Go to W3schools HTML section">Visit out HTML Tutorial</a><!--The title attribute specifies extra information about an element-->
+<p><a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a></p><!--use a full URL to link to a web page:-->
+<p><a href="index1.html">HTML Tutorial</a></p><!--Link to a page located in the html folder on the current web site: -->
+<a href="default.html">HTML tutorial</a><!--Link to a page located in the same folder as the current page: -->
+<!--Bookmark=To create a bookmark - first create the bookmark, then add a link to it.-->
+<h2 id="YT">Chapter 4</h2><!--First, use the id attribute to create a bookmark:-->
+<a href="#YT">Jump to Chapter</a><!--Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:-->
+<a href="html_demo.html#C4">Jump to Chapter</a><!--You can also add a link to a bookmark on another page:-->
+<!--<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}</style>-->        <!--src - Specifies the path to the image\\\alt - Specifies an alternate text for the image-->
+<img src="G:\download\picture\Lion_depth.jpg" alt="a lion" style="width:100px;height:90px;"><!--<img src="url" alt="alternatetext">////width="100"height="90"-->
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  img{width:100%;}
+  </style>
+</head>
+<body>
+  <h2>Width/Height Attributes or Style?</h2>
+  <p>The first image uses the width attribute(set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
+  <img src="G:\download\picture\Lion.jpg"  alt="a lion" width="100" height="90">
+  <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overidden by the style in the head section:</p>
+  <img src="G:\download\picture\Lion.jpg" alt="a lion" style="width:100px;height:90px;">
+</body>
+</html>--><!--APNG	Animated Portable Network Graphics	.apng\\\GIF	Graphics Interchange Format	.gif\\\ICO	Microsoft Icon	.ico, .cur\\\JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp\\\PNG	Portable Network Graphics	.png\\\SVG	Scalable Vector Graphics	.svg-->
+<p><a href="https://www.youtube.com/"><img src="https://imgs.search.brave.com/yhXERtj1q1HJI3xmrrFH_cj5OQrtRPdHOQpM5TkltZo/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9qb29p/bm4uY29tL2ltYWdl/cy9ldXJvcGVhbi1y/YWJiaXQtNS5qcGc" alt="rabbit" width="70"></a></p><!--images on another server/website-->
+<p><img src="F:\giphy.gif" alt="computer man"style="width:100px;"></p><!--for animated images-->
+<p><img src="F:\giphy.gif" alt="typing cat!" style="float:right;width:100px;">The image will float to the  left of the text.</p><br><br><br><br><br>
+<p><img src="F:\giphy.gif" alt="typing cat!" style="float:left;width:100px;">The image will float to the left of the text.</p>
+<!--Use the HTML <img> element to define an image\\\\Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed\\\\Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right-->
+<br><br><br><!--Image Maps(important)-->
+<!--<h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+<img src="F:\workplace.jpg" alt="workplace" usemap="#workmap" width="400">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="computer" href="index1.html">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="fcc1().html">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="fcc(table).html">
+</map>--><!--rect - defines a rectangular region\\\circle - defines a circular region\\\poly - defines a polygonal region\\\default - defines the entire region-->
+<!--image map and javascript-->
+<h2>Image Maps</h2>
+<p>Click on the cup of coffee to execute a JavaScript function:</p>
+<img src="F:\workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350"alt="computer" href="index1.html" onclick="myfunction1()">
+  <area shape="rect" coords="290,172,333,250" alt="phone" href="fcc1().html" onclick="myfunctionf2()">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="index.html" onclick="myFunction()">
+</map>
+<script>
+function myfunction1() {
+  alert("You clicked on the computer!");
+}
+</script>
+<script>
+function myfunctionf2() {
+  alert("You clicked on the phone!");
+}
+</script>
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+<p style="background-image: url('Lion.jpg');background-attachment: fixed;background-size:100% 100%;">You can specify background images<br>for any visible HTML element.<br>Int this example, the background image<br>is specified for a p element.<br>By default, the background-image<br>will repeat itself in the direction(s)<br>where it is smaller than the element<br>where it is specified.(Try resizing the<br>browser window to see how the<br>backgroundimage behaves.)</p>
+<!--<style>
+p {background-image: url('img_girl.jpg');}
+</style>-->
+<!--<style>
+body {
+  background-image: url('Lion.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>-->
+<h2>The picture Element</h2>
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg" style="width:auto;">
+</picture>
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.The browser looks for the first source element where the media query matches the user's current viewport width,and fetches the image specified in the srcset attribute.</p>
+<p>The img element is required as the last child tag of the picture declaration block.The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.</p>
+<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+<!--Table-->
+<h2>HTML Table</h2>
+<table>
+<tr><th style="width:70%;">Company</th><th>Contact</th><th>country</th></tr><!--for column width<th style="width:70%;">Company</th>-->
+  <tr style="height:200px;"><td>Alfreds Futterkiste</td><td>Maria Anders</td><td>Germany</td></tr><!--for row hight style="height:200px;">-->
+  <tr><td>Centro comercial Moctezuma</td><td>Francisco Chang</td><td>Mexico</td></tr>
+  <tr><td>Ernst Handel</td><td>Roland Mendel</td><td>Austria</td></tr>
+  <tr><td>Island Trading</td><td>Helen Bennett</td><td>UK</td></tr>
+  <tr><td>Laughing Bacchus Winecellars</td><td>Yoshi Tannamuri</td><td>Canada</td></tr>
+  <tr><td>Magazzini Alimentari Riuniti</td><td>Giovanni Rovelli</td><td>Italy</td></tr>
+</table>
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  table,td,th{border: 1px solid black;
+              text-align:center;
+              border-collapse:collapse;
+              border-color: #96D4D4;
+              border-color: #96D4D4;
+              }
+  table {
+        border-spacing: 30px;
+        }
+        \\\\for table styling\\\\
+ tr:nth-child(even) {
+                    background-color: #D6EEEE;
+                    }
+  </style>\\\\border style---------dotted dashed solid double groove ridge inset outset note hidden,,
+</head>
+<body>
+  <h2>A basic HTML table</h2>
+  <table style="width:100%;">
+    <tr><th>Company</th><th>Contact</th><th>Country</th></tr>
+      <tr><td>Alfreds Futterkiste</td><td>Maria Anders</td><td>Germany</td></tr>
+      <tr><td>Centro comercial Moctezuma</td><td>Francisco Chang</td><td>Mexico</td></tr>
+    </table>
+  </body>
+  </html>  -->
+  <!--If you want to style the two first columns of a table, use the <colgroup> and <col> elements.-->
+  <!--<colgroup>single of multiple col
+    <col span="2" style="background-color:lightblue;">
+    <col span="3" style="background-color:pink;"
+  </colgroup>-->
+  <!--  for empty col
+  <colgroup>
+    <col span="3">
+    <col span="2" style="background-color:pink;"
+  </colgroup>  -->
+  <h2>An Unordered HTLM List:</h2>
+  <ul style="list-style-type:circle;"><!--style="list-style-type:    "\\disc\\circle\\square\\none-->
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <h2>An Ordered HTML List:</h2>
+  <ol type="i"><!--type=""\\1\\A\\a\\i\\I-->
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <h2>A Description List</h2>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+  <!--nested HTML Lists-->
+  <h2>A Nested List</h2>
+  <p>Lists can be nested (list inside list):</p>
+  <ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea
+    <ul style="list-style-type:circle;">
+    <li>Black tea</li>
+    <li>Green tea</li>
+    </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+<h2>The start attribute</h2>
+<p>By default, an ordered list will start counting from 1. Use the start attribute to start counting from a specified number:</p>
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<ol type="I" start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<!--block level elements(p-paragraph,div-a division or a section in an html)\\A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the elemen-->
+<p style="border:1px solid black">Hello World</p>
+<div style="border:1px solid black">Hello World</div>
+<p>The q and the DIV elements are both block elements, and they will always start on a new line and take up the full width available(stretches out to the left and right as far as it can).</p>
+<p>This is an inline span<span style="border:1px solid black;">Hello World</span> element inside a paragraph.</p>
+<p>The SPAN element is an inline element, and will not takes up as much width as necessary.</p>
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div><!--block-level-element<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>-->
+<h1>The span element</h1><!--inline elements<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>-->
+<p>My mother has<span style="color:blue;font-weight:bold"> blue</span> eyes and my father has <span style="color:red;font-weight:bold">dark green</span> eyes.</p>
+<div class="city"><!--use of class attribute-->
+  <h2>London</h2><p>London is the capital of England.</p></div>
+<div class="city"><!--use .city(fordiv)\\.note(for span) in style-->
+  <h2>Paris</h2><p>Paris is the capital of France.</p></div>
+  <div class="city">
+    <h2>Tokyo</h2><p>Tokyo is the capital of Japan.</p></div>
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+<h2>The class Attribute</h2><p>Use CSS to style elements with the class name"city":</p>
+<h2 class="city">London</h2><!--the syntax for class-->
+<p>London is the capital of England.</p>
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+<h2>multiple Classes</h2><!--multiple Classes-->
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+<h2>Different Elements Can Share Same Class</h2><p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+<h2 class="city">Paris</h2><!--Different Elements Can Share Same Class-->
+<p class="city">Paris is the capital of France.</p>
+<!--use of the class attribute in javascript-->
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "cicty":</p>
+<button onclick="myFunction4()">Hide Elements</button>
+<h2 class="city">London</h2><p>London is the capital of England.</p>
+<h2 class="city">Paris</h2><p>Paris is the capital of France.</p>
+<h2 class="city">Tokyo</h2><p>Tokyo is the capital of Japan.</p>
+<script>
+function myFunction4(){
+  var x = document.getElementsByClassName("city");
+  for(var i = 0; i < x.length;i++){
+    x[i].style.display = "none";
+  }
+}
+</script><!--JavaScript can access elements with a specific class name with the getElementsByClassName() method-->
+<!--use of id attribute\\The id name is case sensitive!-->
+<h2>The id Attribute</h2><!--A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:-->
+<p>Use CSS to style an element with the id "myHeader":</p>
+  <h2 id="myHeader">My Header</h2>
+  <h2>Difference between class and id</h2>
+  <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+  <h1 id="myHeader">My cities</h1>
+  <h1 id="myHeader">hello</h1>
+  <h2 class="city">London</h2>
+  <h2 class="city">Paris</h2>
+  <!--HTML bookmarks with id and links\\\first create a bookmark with the id Attribute-->
+  <p><a href="#c3">Jump to Chapter3</a></p>
+  <p><a href="#c10">Jump to Chapter10</a></p>
+    <h2>Chapter 1</h2><p>This chapter explains ba bla bla</p>
+    <h2>Chapter 2</h2><p>This chapter explains ba bla bla</p>
+    <h2 id="c3">Chapter 3</h2><p>This chapter explains ba bla bla</p>
+    <h2>Chapter 4</h2><p>This chapter explains ba bla bla</p>
+    <h2>Chapter 5</h2><p>This chapter explains ba bla bla</p>
+    <h2>Chapter 6</h2><p>This chapter explains ba bla bla</p>
+    <h2>Chapter 7</h2><p>This chapter explains ba bla bla</p>
+    <h2>Chapter 8</h2><p>This chapter explains ba bla bla</p>
+    <h2>Chapter 9</h2><p>This chapter explains ba bla bla</p>
+    <h2 id="c10">Chapter 10</h2><p>This chapter explains ba bla bla</p>
+    <h2>Chapter 11</h2><p>This chapter explains ba bla bla</p>
+    <!--Using The id Attribute in JavaScript-->
+  <div style="background-color:yellow;"><h2>Using the id attributes in JavaScript</h2>
+  <p>javascript can access an element with a specified id by using the getElementById() method:</p>
+  <h1 id="helloBro">Hello World!</h1>
+  <button onclick="displayResult()">Change text</button>
+  <script>
+function displayResult() {
+  document.getElementById("helloBro").innerHTML = "Have a nice day!";
+}
+</script></div>
+<!--iframe-->
+<iframe src="fcc(table).html" height="200" width="400" style="border:2px solid red;" title="Iframe Example"></iframe>
+<h2>Iframe - Terget for a Link</h2>
+<iframe src="index1.html" style="border:2px solid green;"name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+<p><a href="https://www.youtube.com/" Target="iframe_a">youtube.com</a></p>
+<p>When the terget attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+<h1>My First JavaScript</h1>
+<button type="button"
+onclick="document.getElementById('none').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<h2>Use JavaScript to Change Text</h2>
+<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+<p id="none"></p>
+<script>
+document.getElementById("none").innerHTML = "Hello JavaScript!";
+</script>
+
+<br><br>
+
+<button type="button" onclick="myFunction1()">Click Me!</button>
+<p id="hello">This is a demonstration.</p>
+<script>
+function myFunction1() {
+  document.getElementById("hello").innerHTML = "Hello JavaScript";
+}
+</script>
+
+<br><br>
+
+<h1>My First JavaScript</h1>
+<p id="uri">JavaScript can change the style of an HTML element.</p>
+<script>
+function myFunction() {
+  document.getElementById("uri").style.fontSize = "25px";
+  document.getElementById("uri").style.color = "red";
+  document.getElementById("uri").style.backgroundColor = "yellow";
+}
+</script>
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+
+<br><br>
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+<script>
+function light(sw) {
+  var pic;
+  if(sw==0){
+    pic="pic_bulboff.gif"
+  }
+  else{
+    pic="pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src=pic;
+}
+</script>
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<br><br>
+
+<!--The HTML <noscript> Tag-->
+<p id="no"></p>
+<script>
+document.getElementById("no").innerHTML="Hello JavaScript!";</script>
+<noscript>Sorry, your browser does not support JavaScript</noscript>
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+<!--HTML File paths(file path examples)--><!--
+<img src="picture.jpg">	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder-->
+<h2>Using a Full URL File Path</h2>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="mountain" style="width:300px">
+<h2>Using a Relative File Path</h2>
+<img src="/images/picture.jpg" alt="Mountain" style="width:300px">
+<h2>Using a Relative File Path</h2>
+<img src="images/picture.jpg" alt="Mountain" style="width:300px">
+<p><img src="stickman.gif" width="24" height="39" alt="Stickman"></p>
+<!--<header> - Defines a header for a document or a section\\\<nav> - Defines a set of navigation links
+<section> - Defines a section in a document\\\<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)\\\<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand\\\<summary> - Defines a heading for the <details> element-->
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller sccreens, the columns will stack on top of each other.</p><p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+<header>Cities</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+<article>
+  <h2>London</h2>
+  <p>London is teh capital city of England. It is the most populous city in teh Uniterd Kingdonm, with a metropolitan area of over 13 million inhabitants.</p><p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</article>
+</section>
+<footer>
+  <p>Footer</p>
+</footer>
+<img src="img_girl.jpg" style="width:100%;height:200px">
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+<h2>Computer Code</h2>
+<p>Some programming code:</p>
+<code><!--The <code> element defines a piece of computer code-->
+x = 5;
+y = 6;
+z = x + y;
+</code>
+
+<h2>The kbd Element</h2>
+<p>The kbd element is used to define keyboard input:</p>
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p><!--The <kbd> element defines keyboard input-->
+
+<h2>The samp Element</h2>
+<p>The samp element is used to define sample output from a computer program.</p>
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to containe</samp></p><!--The <samp> element defines sample output from a computer program-->
+
+<p>The code elemendoes not preserve whitespace and line-breaks.</p>
+<p>To fix this, you can put the code element inside a pre element:</p>
+<pre><!--The <pre> element defines preformatted text-->
+  <code>
+    x=5;
+    y=6;
+    z=x+y;
+  </code>
+</pre>
+
+<h2>The var Element</h2>
+<p>The area of a triangle is: 1/2 x
+  <var>b</var> x </var>h</var>, where<!--The <var> element defines a variable in programming or in a mathematical expression-->
+  <var>b</var> is the base, and
+  <var>h</var> is the verticle height.
+</p>
+
+</body>
+</html>
